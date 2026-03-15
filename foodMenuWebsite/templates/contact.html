@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="container py-5">
+
+    <h1 class="text-center fw-bold mb-4">Contact Us</h1>
+    <p class="text-center text-muted mb-5">
+        Have a question, suggestion, or want to place a custom order? We're here to help!
+    </p>
+
+    <div class="row align-items-center">
+
+        <!-- Left Info -->
+        <div class="col-md-5 mb-4">
+            <h4 class="fw-bold">Visit Us</h4>
+            <p class="text-muted">FoodHeaven Restaurant</p>
+            <p class="text-muted">MG Road, City Center, India</p>
+
+            <h4 class="fw-bold mt-4">Call Us</h4>
+            <p><a href="tel:+910000000000" class="contact-link">+91 00000 00000</a></p>
+
+            <h4 class="fw-bold mt-4">WhatsApp</h4>
+            <p><a href="https://wa.me/910000000000" class="contact-link">Message Us</a></p>
+
+            <h4 class="fw-bold mt-4">Email</h4>
+            <p><a href="mailto:contact@foodheaven.com" class="contact-link">contact@foodheaven.com</a></p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-md-7">
+            <div class="contact-form-card p-4">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Your Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Your Email</label>
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="4" placeholder="Type your message"></textarea>
+                    </div>
+
+                    <button class="btn btn-primary w-100 py-2 font-weight-bold" style="border-radius: 50px;">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

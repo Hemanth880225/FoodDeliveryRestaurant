@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5">
+  <div class="card shadow-sm rounded-4 border-0">
+    <div class="card-body p-5">
+      <h2 class="fw-bold text-primary mb-4">Update Order #{{ order.id }}</h2>
+
+      <p><strong>Customer:</strong> {{ order.customer.first_name }} {{ order.customer.last_name }}</p>
+      <p><strong>Total:</strong> ₹{{ "%.2f"|format(order.total_price) }}</p>
+
+      <form method="POST">
+        {{ form.hidden_tag() }}
+
+        <div class="mb-3 w-50">
+          {{ form.status.label(class="form-label fw-semibold") }}
+          {{ form.status(class="form-select") }}
+        </div>
+
+        {{ form.submit(class="btn btn-success px-4") }}
+        <a href="{{ url_for('owner_orders') }}" class="btn btn-outline-secondary ms-2 px-4">Cancel</a>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock content %}

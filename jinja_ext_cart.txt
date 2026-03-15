@@ -1,0 +1,124 @@
+            {% elif item.menu_item.name == 'Hyderabadi Chicken Biryani' %}{% set image_url = "https://images.pexels.com/photos/5410401/pexels-photo-5410401.jpeg?cs=srgb&dl=pexels-saveurs-secretes-5410401.jpg&fm=jpg" %}
+            {% elif item.menu_item.name == 'Hyderabadi Mutton Biryani' %}{% set image_url = "https://images.pexels.com/photos/9609846/pexels-photo-9609846.jpeg?cs=srgb&dl=pexels-prabal-pratap-singh-9609846.jpg&fm=jpg" %}
+            {% elif item.menu_item.name == 'Lucknowi Dum Biryani' %}{% set image_url = "https://images.pexels.com/photos/958546/pexels-photo-958546.jpeg?cs=srgb&dl=close-up-cuisine-delicious-958546.jpg&fm=jpg" %}
+            {% elif item.menu_item.name == 'Kolkata Biryani' %}{% set image_url = "https://images.pexels.com/photos/8921573/pexels-photo-8921573.jpeg?h=1000&w=1500&fit=crop&markalign=center,middle&txt=pexels.com&txtalign=center&txtsize=60&txtclr=eeffffff&txtfont=Avenir-Heavy&txtshad=10&mark=https://assets.imgix.net/~text?txtclr=fff&txtsize=120&txtpad=20&bg=80000000&txtfont=Avenir-Heavy&txtalign=center&w=1300&txt=Free%20Stock%20Photos" %}
+            {% elif item.menu_item.name == 'Paneer Biryani' %}{% set image_url = "https://loremflickr.com/800/600/Paneer%20Biryani,food/all" %}
+            {% elif item.menu_item.name == 'Veg Dum Biryani' %}{% set image_url = "https://loremflickr.com/800/600/Veg%20Dum%20Biryani,food/all" %}
+            {% elif item.menu_item.name == 'Egg Biryani' %}{% set image_url = "https://loremflickr.com/800/600/Egg%20Biryani,food/all" %}
+            {% elif item.menu_item.name == 'North Indian Royal Thali' %}{% set image_url = "https://loremflickr.com/800/600/North%20Indian%20Royal%20Thali,food/all" %}
+            {% elif item.menu_item.name == 'South Indian Traditional Thali' %}{% set image_url = "https://loremflickr.com/800/600/South%20Indian%20Traditional%20Thali,food/all" %}
+            {% elif item.menu_item.name == 'Gujarati Thali' %}{% set image_url = "https://loremflickr.com/800/600/Gujarati%20Thali,food/all" %}
+            {% elif item.menu_item.name == 'Rajasthani Thali' %}{% set image_url = "https://loremflickr.com/800/600/Rajasthani%20Thali,food/all" %}
+            {% elif item.menu_item.name == 'Maharashtrian Thali' %}{% set image_url = "https://loremflickr.com/800/600/Maharashtrian%20Thali,food/all" %}
+            {% elif item.menu_item.name == 'Punjabi Special Thali' %}{% set image_url = "https://loremflickr.com/800/600/Punjabi%20Special%20Thali,food/all" %}
+            {% elif item.menu_item.name == 'Gulab Jamun' %}{% set image_url = "https://loremflickr.com/800/600/Gulab%20Jamun,food/all" %}
+            {% elif item.menu_item.name == 'Rasgulla' %}{% set image_url = "https://loremflickr.com/800/600/Rasgulla,food/all" %}
+            {% elif item.menu_item.name == 'Kaju Katli' %}{% set image_url = "https://loremflickr.com/800/600/Kaju%20Katli,food/all" %}
+            {% elif item.menu_item.name == 'Jalebi' %}{% set image_url = "https://loremflickr.com/800/600/Jalebi,food/all" %}
+            {% elif item.menu_item.name == 'Rasmalai' %}{% set image_url = "https://loremflickr.com/800/600/Rasmalai,food/all" %}
+            {% elif item.menu_item.name == 'Motichoor Laddu' %}{% set image_url = "https://loremflickr.com/800/600/Motichoor%20Laddu,food/all" %}
+            {% elif item.menu_item.name == 'Mysore Pak' %}{% set image_url = "https://loremflickr.com/800/600/Mysore%20Pak,food/all" %}
+            {% elif item.menu_item.name == 'Samosa' %}{% set image_url = "https://loremflickr.com/800/600/Samosa,food/all" %}
+            {% elif item.menu_item.name == 'Aloo Tikki Chaat' %}{% set image_url = "https://loremflickr.com/800/600/Aloo%20Tikki%20Chaat,food/all" %}
+            {% elif item.menu_item.name == 'Pani Puri' %}{% set image_url = "https://loremflickr.com/800/600/Pani%20Puri,food/all" %}
+            {% elif item.menu_item.name == 'Dahi Puri' %}{% set image_url = "https://loremflickr.com/800/600/Dahi%20Puri,food/all" %}
+            {% elif item.menu_item.name == 'Pav Bhaji' %}{% set image_url = "https://loremflickr.com/800/600/Pav%20Bhaji,food/all" %}
+            {% elif item.menu_item.name == 'Vada Pav' %}{% set image_url = "https://loremflickr.com/800/600/Vada%20Pav,food/all" %}
+            {% elif item.menu_item.name == 'Masala Corn' %}{% set image_url = "https://loremflickr.com/800/600/Masala%20Corn,food/all" %}
+            {% elif item.menu_item.name == 'Bread Pakora' %}{% set image_url = "https://loremflickr.com/800/600/Bread%20Pakora,food/all" %}
+            {% elif item.menu_item.name == 'Butter Chicken' %}{% set image_url = "https://loremflickr.com/800/600/Butter%20Chicken,food/all" %}
+            {% elif item.menu_item.name == 'Amritsari Kulcha' %}{% set image_url = "https://loremflickr.com/800/600/Amritsari%20Kulcha,food/all" %}
+            {% elif item.menu_item.name == 'Sarson da Saag with Makki di Roti' %}{% set image_url = "https://loremflickr.com/800/600/Sarson%20da%20Saag%20with%20Makki%20di%20Roti,food/all" %}
+            {% elif item.menu_item.name == 'Paneer Butter Masala' %}{% set image_url = "https://loremflickr.com/800/600/Paneer%20Butter%20Masala,food/all" %}
+            {% elif item.menu_item.name == 'Dal Makhani' %}{% set image_url = "https://loremflickr.com/800/600/Dal%20Makhani,food/all" %}
+            {% elif item.menu_item.name == 'Chole Bhature' %}{% set image_url = "https://loremflickr.com/800/600/Chole%20Bhature,food/all" %}
+            {% elif item.menu_item.name == 'Tandoori Chicken' %}{% set image_url = "https://loremflickr.com/800/600/Tandoori%20Chicken,food/all" %}
+            {% elif item.menu_item.name == 'Paneer Tikka' %}{% set image_url = "https://loremflickr.com/800/600/Paneer%20Tikka,food/all" %}
+            {% elif item.menu_item.name == 'Chicken Tikka' %}{% set image_url = "https://loremflickr.com/800/600/Chicken%20Tikka,food/all" %}
+            {% elif item.menu_item.name == 'Sweet Lassi' %}{% set image_url = "https://loremflickr.com/800/600/Sweet%20Lassi,food/all" %}
+            {% elif item.menu_item.name == 'Andhra Chicken Curry' %}{% set image_url = "https://loremflickr.com/800/600/Andhra%20Chicken%20Curry,food/all" %}
+            {% elif item.menu_item.name == 'Gongura Mutton' %}{% set image_url = "https://loremflickr.com/800/600/Gongura%20Mutton,food/all" %}
+            {% elif item.menu_item.name == 'Andhra Fish Fry' %}{% set image_url = "https://loremflickr.com/800/600/Andhra%20Fish%20Fry,food/all" %}
+            {% elif item.menu_item.name == 'Kodi Vepudu' %}{% set image_url = "https://loremflickr.com/800/600/Kodi%20Vepudu,food/all" %}
+            {% elif item.menu_item.name == 'Andhra Prawn Curry' %}{% set image_url = "https://loremflickr.com/800/600/Andhra%20Prawn%20Curry,food/all" %}
+            {% elif item.menu_item.name == 'Royyala Iguru' %}{% set image_url = "https://loremflickr.com/800/600/Royyala%20Iguru,food/all" %}
+            {% elif item.menu_item.name == 'Andhra Spicy Biryani' %}{% set image_url = "https://loremflickr.com/800/600/Andhra%20Spicy%20Biryani,food/all" %}
+            {% elif item.menu_item.name == 'Tomato Pappu' %}{% set image_url = "https://loremflickr.com/800/600/Tomato%20Pappu,food/all" %}
+            {% elif item.menu_item.name == 'Andhra Rasam' %}{% set image_url = "https://loremflickr.com/800/600/Andhra%20Rasam,food/all" %}
+            {% elif item.menu_item.name == 'Gutti Vankaya Curry' %}{% set image_url = "https://loremflickr.com/800/600/Gutti%20Vankaya%20Curry,food/all" %}
+            {% elif item.menu_item.name == 'Chettinad Chicken' %}{% set image_url = "https://loremflickr.com/800/600/Chettinad%20Chicken,food/all" %}
+            {% elif item.menu_item.name == 'Chicken Chettinad Biryani' %}{% set image_url = "https://loremflickr.com/800/600/Chicken%20Chettinad%20Biryani,food/all" %}
+            {% elif item.menu_item.name == 'Karaikudi Mutton Curry' %}{% set image_url = "https://loremflickr.com/800/600/Karaikudi%20Mutton%20Curry,food/all" %}
+            {% elif item.menu_item.name == 'Idli with Sambar' %}{% set image_url = "https://loremflickr.com/800/600/Idli%20with%20Sambar,food/all" %}
+            {% elif item.menu_item.name == 'Dosa with Chutney' %}{% set image_url = "https://loremflickr.com/800/600/Dosa%20with%20Chutney,food/all" %}
+            {% elif item.menu_item.name == 'Pongal' %}{% set image_url = "https://loremflickr.com/800/600/Pongal,food/all" %}
+            {% elif item.menu_item.name == 'Lemon Rice' %}{% set image_url = "https://loremflickr.com/800/600/Lemon%20Rice,food/all" %}
+            {% elif item.menu_item.name == 'Tamarind Rice' %}{% set image_url = "https://loremflickr.com/800/600/Tamarind%20Rice,food/all" %}
+            {% elif item.menu_item.name == 'Medu Vada' %}{% set image_url = "https://loremflickr.com/800/600/Medu%20Vada,food/all" %}
+            {% elif item.menu_item.name == 'Filter Coffee' %}{% set image_url = "https://loremflickr.com/800/600/Filter%20Coffee,food/all" %}
+            {% elif item.menu_item.name == 'Kerala Fish Curry' %}{% set image_url = "https://loremflickr.com/800/600/Kerala%20Fish%20Curry,food/all" %}
+            {% elif item.menu_item.name == 'Malabar Chicken Biryani' %}{% set image_url = "https://loremflickr.com/800/600/Malabar%20Chicken%20Biryani,food/all" %}
+            {% elif item.menu_item.name == 'Appam with Vegetable Stew' %}{% set image_url = "https://loremflickr.com/800/600/Appam%20with%20Vegetable%20Stew,food/all" %}
+            {% elif item.menu_item.name == 'Kerala Prawn Curry' %}{% set image_url = "https://loremflickr.com/800/600/Kerala%20Prawn%20Curry,food/all" %}
+            {% elif item.menu_item.name == 'Kerala Beef Fry' %}{% set image_url = "https://loremflickr.com/800/600/Kerala%20Beef%20Fry,food/all" %}
+            {% elif item.menu_item.name == 'Kerala Parotta with Curry' %}{% set image_url = "https://loremflickr.com/800/600/Kerala%20Parotta%20with%20Curry,food/all" %}
+            {% elif item.menu_item.name == 'Avial' %}{% set image_url = "https://loremflickr.com/800/600/Avial,food/all" %}
+            {% elif item.menu_item.name == 'Kerala Sadya' %}{% set image_url = "https://loremflickr.com/800/600/Kerala%20Sadya,food/all" %}
+            {% elif item.menu_item.name == 'Banana Chips' %}{% set image_url = "https://loremflickr.com/800/600/Banana%20Chips,food/all" %}
+            {% elif item.menu_item.name == 'Payasam' %}{% set image_url = "https://loremflickr.com/800/600/Payasam,food/all" %}
+            {% elif item.menu_item.name == 'Misal Pav' %}{% set image_url = "https://loremflickr.com/800/600/Misal%20Pav,food/all" %}
+            {% elif item.menu_item.name == 'Puran Poli' %}{% set image_url = "https://loremflickr.com/800/600/Puran%20Poli,food/all" %}
+            {% elif item.menu_item.name == 'Sabudana Khichdi' %}{% set image_url = "https://loremflickr.com/800/600/Sabudana%20Khichdi,food/all" %}
+            {% elif item.menu_item.name == 'Kanda Bhaji' %}{% set image_url = "https://loremflickr.com/800/600/Kanda%20Bhaji,food/all" %}
+            {% elif item.menu_item.name == 'Thalipeeth' %}{% set image_url = "https://loremflickr.com/800/600/Thalipeeth,food/all" %}
+            {% elif item.menu_item.name == 'Kolhapuri Chicken' %}{% set image_url = "https://loremflickr.com/800/600/Kolhapuri%20Chicken,food/all" %}
+            {% elif item.menu_item.name == 'Kolhapuri Mutton' %}{% set image_url = "https://loremflickr.com/800/600/Kolhapuri%20Mutton,food/all" %}
+            {% elif item.menu_item.name == 'Modak' %}{% set image_url = "https://loremflickr.com/800/600/Modak,food/all" %}
+            {% elif item.menu_item.name == 'Dal Baati Churma' %}{% set image_url = "https://loremflickr.com/800/600/Dal%20Baati%20Churma,food/all" %}
+            {% elif item.menu_item.name == 'Gatte ki Sabzi' %}{% set image_url = "https://loremflickr.com/800/600/Gatte%20ki%20Sabzi,food/all" %}
+            {% elif item.menu_item.name == 'Laal Maas' %}{% set image_url = "https://loremflickr.com/800/600/Laal%20Maas,food/all" %}
+            {% elif item.menu_item.name == 'Ker Sangri' %}{% set image_url = "https://loremflickr.com/800/600/Ker%20Sangri,food/all" %}
+            {% elif item.menu_item.name == 'Rajasthani Kadhi' %}{% set image_url = "https://loremflickr.com/800/600/Rajasthani%20Kadhi,food/all" %}
+            {% elif item.menu_item.name == 'Bajra Roti with Garlic Chutney' %}{% set image_url = "https://loremflickr.com/800/600/Bajra%20Roti%20with%20Garlic%20Chutney,food/all" %}
+            {% elif item.menu_item.name == 'Mawa Kachori' %}{% set image_url = "https://loremflickr.com/800/600/Mawa%20Kachori,food/all" %}
+            {% elif item.menu_item.name == 'Mirchi Vada' %}{% set image_url = "https://loremflickr.com/800/600/Mirchi%20Vada,food/all" %}
+            {% elif item.menu_item.name == 'Ghewar' %}{% set image_url = "https://loremflickr.com/800/600/Ghewar,food/all" %}
+            {% elif item.menu_item.name == 'Veg Hakka Noodles' %}{% set image_url = "https://loremflickr.com/800/600/Veg%20Hakka%20Noodles,food/all" %}
+            {% elif item.menu_item.name == 'Chicken Hakka Noodles' %}{% set image_url = "https://loremflickr.com/800/600/Chicken%20Hakka%20Noodles,food/all" %}
+            {% elif item.menu_item.name == 'Schezwan Fried Rice' %}{% set image_url = "https://loremflickr.com/800/600/Schezwan%20Fried%20Rice,food/all" %}
+            {% elif item.menu_item.name == 'Chicken Manchurian' %}{% set image_url = "https://loremflickr.com/800/600/Chicken%20Manchurian,food/all" %}
+            {% elif item.menu_item.name == 'Veg Manchurian' %}{% set image_url = "https://loremflickr.com/800/600/Veg%20Manchurian,food/all" %}
+            {% elif item.menu_item.name == 'Spring Rolls' %}{% set image_url = "https://loremflickr.com/800/600/Spring%20Rolls,food/all" %}
+            {% elif item.menu_item.name == 'Hot and Sour Soup' %}{% set image_url = "https://loremflickr.com/800/600/Hot%20and%20Sour%20Soup,food/all" %}
+            {% elif item.menu_item.name == 'Chili Chicken' %}{% set image_url = "https://loremflickr.com/800/600/Chili%20Chicken,food/all" %}
+            {% elif item.menu_item.name == 'Garlic Noodles' %}{% set image_url = "https://loremflickr.com/800/600/Garlic%20Noodles,food/all" %}
+            {% elif item.menu_item.name == 'Pad Thai Noodles' %}{% set image_url = "https://loremflickr.com/800/600/Pad%20Thai%20Noodles,food/all" %}
+            {% elif item.menu_item.name == 'Thai Green Curry' %}{% set image_url = "https://loremflickr.com/800/600/Thai%20Green%20Curry,food/all" %}
+            {% elif item.menu_item.name == 'Thai Red Curry' %}{% set image_url = "https://loremflickr.com/800/600/Thai%20Red%20Curry,food/all" %}
+            {% elif item.menu_item.name == 'Thai Basil Chicken' %}{% set image_url = "https://loremflickr.com/800/600/Thai%20Basil%20Chicken,food/all" %}
+            {% elif item.menu_item.name == 'Mango Sticky Rice' %}{% set image_url = "https://loremflickr.com/800/600/Mango%20Sticky%20Rice,food/all" %}
+            {% elif item.menu_item.name == 'Thai Fried Rice' %}{% set image_url = "https://loremflickr.com/800/600/Thai%20Fried%20Rice,food/all" %}
+            {% elif item.menu_item.name == 'Tom Yum Soup' %}{% set image_url = "https://loremflickr.com/800/600/Tom%20Yum%20Soup,food/all" %}
+            {% elif item.menu_item.name == 'Pineapple Fried Rice' %}{% set image_url = "https://loremflickr.com/800/600/Pineapple%20Fried%20Rice,food/all" %}
+            {% elif item.menu_item.name == 'Mexican Burrito Bowl' %}{% set image_url = "https://loremflickr.com/800/600/Mexican%20Burrito%20Bowl,food/all" %}
+            {% elif item.menu_item.name == 'Chicken Quesadilla' %}{% set image_url = "https://loremflickr.com/800/600/Chicken%20Quesadilla,food/all" %}
+            {% elif item.menu_item.name == 'Beef Tacos' %}{% set image_url = "https://loremflickr.com/800/600/Beef%20Tacos,food/all" %}
+            {% elif item.menu_item.name == 'Veg Enchiladas' %}{% set image_url = "https://loremflickr.com/800/600/Veg%20Enchiladas,food/all" %}
+            {% elif item.menu_item.name == 'Nachos Supreme' %}{% set image_url = "https://loremflickr.com/800/600/Nachos%20Supreme,food/all" %}
+            {% elif item.menu_item.name == 'Mexican Street Corn' %}{% set image_url = "https://loremflickr.com/800/600/Mexican%20Street%20Corn,food/all" %}
+            {% elif item.menu_item.name == 'Chimichanga' %}{% set image_url = "https://loremflickr.com/800/600/Chimichanga,food/all" %}
+            {% elif item.menu_item.name == 'Jollof Rice' %}{% set image_url = "https://loremflickr.com/800/600/Jollof%20Rice,food/all" %}
+            {% elif item.menu_item.name == 'Chicken Yassa' %}{% set image_url = "https://loremflickr.com/800/600/Chicken%20Yassa,food/all" %}
+            {% elif item.menu_item.name == 'Bunny Chow' %}{% set image_url = "https://loremflickr.com/800/600/Bunny%20Chow,food/all" %}
+            {% elif item.menu_item.name == 'Moroccan Chicken Tagine' %}{% set image_url = "https://loremflickr.com/800/600/Moroccan%20Chicken%20Tagine,food/all" %}
+            {% elif item.menu_item.name == 'Couscous Royal' %}{% set image_url = "https://loremflickr.com/800/600/Couscous%20Royal,food/all" %}
+            {% elif item.menu_item.name == 'Peri Peri Chicken' %}{% set image_url = "https://loremflickr.com/800/600/Peri%20Peri%20Chicken,food/all" %}
+            {% elif item.menu_item.name == 'Ethiopian Doro Wat' %}{% set image_url = "https://loremflickr.com/800/600/Ethiopian%20Doro%20Wat,food/all" %}
+            {% elif item.menu_item.name == 'Spaghetti Carbonara' %}{% set image_url = "https://loremflickr.com/800/600/Spaghetti%20Carbonara,food/all" %}
+            {% elif item.menu_item.name == 'Mushroom Risotto' %}{% set image_url = "https://loremflickr.com/800/600/Mushroom%20Risotto,food/all" %}
+            {% elif item.menu_item.name == 'Chicken Alfredo Pasta' %}{% set image_url = "https://loremflickr.com/800/600/Chicken%20Alfredo%20Pasta,food/all" %}
+            {% elif item.menu_item.name == 'Fish and Chips' %}{% set image_url = "https://loremflickr.com/800/600/Fish%20and%20Chips,food/all" %}
+            {% elif item.menu_item.name == 'Grilled Lamb Steak' %}{% set image_url = "https://loremflickr.com/800/600/Grilled%20Lamb%20Steak,food/all" %}
+            {% elif item.menu_item.name == 'Lasagna' %}{% set image_url = "https://loremflickr.com/800/600/Lasagna,food/all" %}
+            {% elif item.menu_item.name == 'Bruschetta' %}{% set image_url = "https://loremflickr.com/800/600/Bruschetta,food/all" %}
+            {% elif item.menu_item.name == 'French Onion Soup' %}{% set image_url = "https://loremflickr.com/800/600/French%20Onion%20Soup,food/all" %}

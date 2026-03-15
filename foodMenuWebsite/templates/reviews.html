@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- HERO SECTION -->
+<section class="hero-main d-flex align-items-center justify-content-center text-center mb-5" style="height: 40vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop'); background-size: cover; background-position: center;">
+    <div class="hero-content">
+        <h1 class="display-4 fw-bold text-white">Customer Reviews</h1>
+        <p class="lead text-white opacity-75">See what our food lovers are saying about Foodmato.</p>
+    </div>
+</section>
+
+<div class="container mb-5">
+    <div class="row">
+        <!-- Review Card 1 -->
+        <div class="col-md-6 col-lg-6 mb-4">
+            <div class="card form-card h-100 border-0 p-4">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Rahul Sharma" class="rounded-circle mr-3" style="width: 60px; height: 60px; object-fit: cover; border: 2px solid var(--primary-color);">
+                    <div>
+                        <h5 class="mb-0 fw-bold">Rahul Sharma</h5>
+                        <div class="text-warning mt-1" style="font-size: 1.1rem;">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <p class="card-text text-muted font-italic">"Amazing food and very fast delivery. The biryani was incredible! Highly recommend the new menu items."</p>
+            </div>
+        </div>
+        
+        <!-- Review Card 2 -->
+        <div class="col-md-6 col-lg-6 mb-4">
+            <div class="card form-card h-100 border-0 p-4">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Priya Patel" class="rounded-circle mr-3" style="width: 60px; height: 60px; object-fit: cover; border: 2px solid var(--primary-color);">
+                    <div>
+                        <h5 class="mb-0 fw-bold">Priya Patel</h5>
+                        <div class="text-warning mt-1" style="font-size: 1.1rem;">⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <p class="card-text text-muted font-italic">"Great variety of dishes. Loved the pasta and desserts. Foodmato is my new go-to app for dinner."</p>
+            </div>
+        </div>
+
+        <!-- Review Card 3 -->
+        <div class="col-md-6 col-lg-6 mb-4">
+            <div class="card form-card h-100 border-0 p-4">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop" alt="David Brown" class="rounded-circle mr-3" style="width: 60px; height: 60px; object-fit: cover; border: 2px solid var(--primary-color);">
+                    <div>
+                        <h5 class="mb-0 fw-bold">David Brown</h5>
+                        <div class="text-warning mt-1" style="font-size: 1.1rem;">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <p class="card-text text-muted font-italic">"Beautiful UI and delicious food options. The ordering process is so smooth and flawless."</p>
+            </div>
+        </div>
+
+        <!-- Review Card 4 -->
+        <div class="col-md-6 col-lg-6 mb-4">
+            <div class="card form-card h-100 border-0 p-4">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop" alt="Aisha Khan" class="rounded-circle mr-3" style="width: 60px; height: 60px; object-fit: cover; border: 2px solid var(--primary-color);">
+                    <div>
+                        <h5 class="mb-0 fw-bold">Aisha Khan</h5>
+                        <div class="text-warning mt-1" style="font-size: 1.1rem;">⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <p class="card-text text-muted font-italic">"Authentic flavors and great presentation. The global cuisines feature really sets this app apart from others."</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

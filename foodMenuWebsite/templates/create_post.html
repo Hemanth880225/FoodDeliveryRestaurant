@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <!-- Card Container -->
+      <div class="card shadow-sm rounded-4">
+        <div class="card-header bg-dark text-white text-center rounded-top-4">
+          <h2 class="mb-0">{{ legend if legend else 'Create a New Post' }}</h2>
+        </div>
+
+        <div class="card-body p-4">
+          <form method="POST" action="">
+            {{ form.hidden_tag() }}
+
+            <!-- Title -->
+            <div class="form-group mb-3">
+              {{ form.title.label(class="form-label fw-semibold") }}
+              {% if form.title.errors %}
+                {{ form.title(class="form-control is-invalid", placeholder="Enter post title") }}
+                <div class="invalid-feedback">
+                  {% for error in form.title.errors %}
+                    <span>{{ error }}</span>
+                  {% endfor %}
+                </div>
+              {% else %}
+                {{ form.title(class="form-control", placeholder="Enter post title") }}
+              {% endif %}
+            </div>
+
+            <!-- Content -->
+            <div class="form-group mb-3">
+              {{ form.content.label(class="form-label fw-semibold") }}
+              {% if form.content.errors %}
+                {{ form.content(class="form-control is-invalid", rows="6", placeholder="Write your post content here...") }}
+                <div class="invalid-feedback">
+                  {% for error in form.content.errors %}
+                    <span>{{ error }}</span>
+                  {% endfor %}
+                </div>
+              {% else %}
+                {{ form.content(class="form-control", rows="6", placeholder="Write your post content here...") }}
+              {% endif %}
+            </div>
+
+            <!-- Details (Optional Extended Info) -->
+            <div class="form-group mb-3">
+              {{ form.details.label(class="form-label fw-semibold") }}
+              {% if form.details.errors %}
+                {{ form.details(class="form-control is-invalid", rows="5", placeholder="Add more details (optional)") }}
+                <div class="invalid-feedback">
+                  {% for error in form.details.errors %}
+                    <span>{{ error }}</span>
+                  {% endfor %}
+                </div>
+              {% else %}
+                {{ form.details(class="form-control", rows="5", placeholder="Add more details (optional)") }}
+              {% endif %}
+            </div>
+
+            <!-- Submit Buttons -->
+            <div class="text-center mt-4">
+              {{ form.submit(class="btn btn-primary px-4 py-2") }}
+              <a href="{{ url_for('all_posts') }}" class="btn btn-secondary px-4 py-2 ms-2">Cancel</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

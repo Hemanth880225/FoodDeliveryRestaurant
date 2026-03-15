@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "name": "Margherita Pizza"
+  },
+  {
+    "id": 2,
+    "name": "Pepperoni Pizza"
+  },
+  {
+    "id": 3,
+    "name": "BBQ Chicken Pizza"
+  },
+  {
+    "id": 4,
+    "name": "Veggie Delight Pizza"
+  },
+  {
+    "id": 5,
+    "name": "Veggie Burger"
+  },
+  {
+    "id": 6,
+    "name": "Cheese Burst Burger"
+  },
+  {
+    "id": 7,
+    "name": "Crispy Chicken Burger"
+  },
+  {
+    "id": 8,
+    "name": "Smoky BBQ Burger"
+  },
+  {
+    "id": 9,
+    "name": "Pasta Alfredo"
+  },
+  {
+    "id": 10,
+    "name": "Red Sauce Pasta"
+  },
+  {
+    "id": 11,
+    "name": "Pesto Pasta"
+  },
+  {
+    "id": 12,
+    "name": "Four Cheese Pasta"
+  },
+  {
+    "id": 13,
+    "name": "Cold Coffee"
+  },
+  {
+    "id": 14,
+    "name": "Lemon Iced Tea"
+  },
+  {
+    "id": 15,
+    "name": "Strawberry Milkshake"
+  },
+  {
+    "id": 16,
+    "name": "Mojito"
+  },
+  {
+    "id": 17,
+    "name": "Caesar Salad"
+  },
+  {
+    "id": 18,
+    "name": "Greek Salad"
+  },
+  {
+    "id": 19,
+    "name": "Garden Fresh Salad"
+  },
+  {
+    "id": 20,
+    "name": "Protein Salad"
+  },
+  {
+    "id": 21,
+    "name": "French Fries"
+  },
+  {
+    "id": 22,
+    "name": "Peri Peri Fries"
+  },
+  {
+    "id": 23,
+    "name": "Garlic Bread"
+  },
+  {
+    "id": 24,
+    "name": "Cheesy Nachos"
+  },
+  {
+    "id": 25,
+    "name": "Chocolate Cake"
+  },
+  {
+    "id": 26,
+    "name": "Brownie with Ice Cream"
+  },
+  {
+    "id": 27,
+    "name": "Donuts"
+  },
+  {
+    "id": 28,
+    "name": "Fruit Bowl"
+  }
+]

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title|default("Foodmato") }}</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Custom Professional Styling -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Modern Navbar -->
+    <nav class="navbar navbar-expand-md navbar-modern">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <span style="font-size: 1.8rem; margin-right: 8px; line-height: 1;">🍅</span> Foodmato
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Content -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Left Side -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="/home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/reviews">Reviews</a></li>
+                </ul>
+
+                <!-- Right Side Buttons -->
+                <div class="navbar-nav ml-auto align-items-center">
+
+                    <!-- Hamburger dropdown button -->
+                    <div class="nav-item dropdown">
+                        <button class="hamburger-btn dropdown-toggle" id="moreMenu" type="button"
+                                role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" aria-label="More">
+                            &#9776; <!-- ☰ Hamburger icon -->
+                        </button>
+
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="moreMenu" id="moreMenuList">
+                            <!-- Always visible -->
+                            <a class="dropdown-item" href="/menu">Menu</a>
+                            <a class="dropdown-item" href="/About/Story">About</a>
+                            <a class="dropdown-item" href="/Contact">Contact</a>
+
+                            {% if current_user.is_authenticated %}
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/posts">Posts</a>
+                            <a class="dropdown-item" href="/reviews">Reviews</a>
+                              {% if current_user.is_owner %}
+                                <a class="dropdown-item" href="/owner/orders">Orders Recieved</a>
+                              {% else %}
+                                <a class="dropdown-item" href="/cart">Cart</a>
+                                <a class="dropdown-item" href="/orders">My Orders</a>
+                              {% endif %}
+
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    {% if current_user.is_authenticated %}
+                        <a class="nav-item nav-link" href="{{ url_for('account')}}">Account</a>
+                        <a class="nav-item nav-link" href="{{ url_for('logout')}}">Logout</a>
+                    {% else %}
+                        <a href="/login" class="btn btn-outline-primary mr-2">Log In</a>
+                        <a href="/register" class="btn btn-primary">Sign Up</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content Wrapper -->
+    <div class="container content-wrapper mt-4">
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand d-flex align-items-center">
+                        <span style="font-size: 1.8rem; margin-right: 8px; line-height: 1;">🍅</span> Foodmato
+                    </div>
+                    <p class="footer-desc">Delivering the finest flavors straight to your doorstep. Fresh ingredients, authentic taste, fast delivery.</p>
+                </div>
+                <div class="footer-links">
+                    <h5>Company</h5>
+                    <a href="/About/Story">About Us</a>
+                    <a href="/Contact">Contact</a>
+                    <a href="/menu">Our Menu</a>
+                </div>
+                <div class="footer-links">
+                    <h5>Legal</h5>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Foodmato. All rights reserved. Crafted with ❤️ for food lovers.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Fallback JS (in case Bootstrap dropdown isn't initialized) -->
+    <script>
+        (function() {
+            var btn = document.getElementById('moreMenu');
+            var menu = document.getElementById('moreMenuList');
+            if (!btn || !menu) return;
+
+            // If Bootstrap fails to bind dropdown, use fallback
+            btn.addEventListener('click', function(e) {
+                var usingBootstrap = typeof $ !== 'undefined' && typeof $.fn !== 'undefined' && typeof $.fn.dropdown === 'function';
+                if (!usingBootstrap) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    menu.classList.toggle('show');
+                    btn.setAttribute('aria-expanded', menu.classList.contains('show') ? 'true' : 'false');
+                }
+            });
+
+            // Click outside to close (fallback only)
+            document.addEventListener('click', function(e) {
+                var isClickInside = btn.contains(e.target) || menu.contains(e.target);
+                if (!isClickInside && menu.classList.contains('show')) {
+                    menu.classList.remove('show');
+                    btn.setAttribute('aria-expanded', 'false');
+                }
+            });
+        })();
+    </script>
+
+</body>
+</html>

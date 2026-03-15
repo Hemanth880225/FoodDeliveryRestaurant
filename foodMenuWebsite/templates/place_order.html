@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5">
+  <div class="card shadow-sm rounded-4 border-0">
+    <div class="card-body p-5">
+      <h2 class="fw-bold text-primary mb-4">Order: {{ menu_item.name }}</h2>
+
+      <p class="fs-5 text-dark mb-2"><strong>Price:</strong> ₹{{ "%.2f"|format(menu_item.price) }}</p>
+      <p class="text-muted">{{ menu_item.description }}</p>
+
+      <form method="POST">
+        {{ form.hidden_tag() }}
+
+        <div class="mb-3 w-25">
+          {{ form.quantity.label(class="form-label fw-semibold") }}
+          {{ form.quantity(class="form-control", placeholder="Enter quantity") }}
+        </div>
+
+        {{ form.submit(class="btn btn-primary px-4") }}
+        <a href="{{ url_for('menu') }}" class="btn btn-outline-secondary px-4 ms-2">Cancel</a>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock content %}

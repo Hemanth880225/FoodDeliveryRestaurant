@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5">
+  <h2 class="fw-bold text-primary mb-4">All Orders</h2>
+
+  {% if orders %}
+  <div class="table-responsive">
+    <table class="table table-striped align-middle shadow-sm">
+      <thead class="table-light">
+        <tr>
+          <th>Order ID</th>
+          <th>Customer</th>
+          <th>Items</th>
+          <th>Total Price</th>
+          <th>Status</th>
+          <th>Order Date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for order in orders %}
+        <tr>
+          <td>#{{ order.id }}</td>
+
+          <!-- Customer Details -->
+          <td>
+            <div class="d-flex align-items-center">
+              <img src="{{ url_for('static', filename='profile_pics/' + (order.customer.image_file or 'default.jpg')) }}"
+                   alt="Profile Picture"
+                   class="rounded-circle mr-2"
+                   width="40" height="40"
+                   style="object-fit: cover;">
+              <div>
+                <strong>{{ order.customer.first_name }} {{ order.customer.last_name }}</strong><br>
+                <small class="text-muted">{{ order.customer.email }}</small>
+              </div>
+            </div>
+          </td>
+
+          <!-- Order Items -->
+          <td>
+            {% for item in order.items %}
+              {{ item.menu_item.name }} (x{{ item.quantity }})<br>
+            {% endfor %}
+          </td>
+
+          <td>₹{{ "%.2f"|format(order.total_price) }}</td>
+
+          <!-- Order Status -->
+          <td>
+            <span class="badge
+              {% if order.status == 'pending' %} bg-warning text-dark
+              {% elif order.status == 'preparing' %} bg-info
+              {% elif order.status == 'delivered' %} bg-success
+              {% else %} bg-secondary {% endif %}">
+              {{ order.status|capitalize }}
+            </span>
+          </td>
+
+          <td>{{ order.date_ordered.strftime('%b %d, %Y %I:%M %p') }}</td>
+
+          <td>
+            <a href="{{ url_for('update_order_status', order_id=order.id) }}" class="btn btn-sm btn-outline-primary">
+              Update
+            </a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <p class="text-muted mt-4">No orders have been placed yet.</p>
+  {% endif %}
+</div>
+{% endblock content %}
