@@ -44,7 +44,7 @@
             {% endfor %}
           </td>
 
-          <td>₹{{ "%.2f"|format(order.total_price) }}</td>
+          <td>${{ "%.2f"|format(order.total_price) }}</td>
 
           <!-- Order Status -->
           <td>

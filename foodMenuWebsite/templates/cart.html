@@ -201,8 +201,8 @@
                       </form>
                     </td>
 
-                    <td class="fw-bold">₹{{ "%.2f"|format(item.menu_item.price) }}</td>
-                    <td class="fw-bold text-primary">₹{{ "%.2f"|format(item.menu_item.price * item.quantity) }}</td>
+                    <td class="fw-bold">${{ "%.2f"|format(item.menu_item.price) }}</td>
+                    <td class="fw-bold text-primary">${{ "%.2f"|format(item.menu_item.price * item.quantity) }}</td>
 
                     <!-- Remove Button with Modal -->
                     <td class="text-right">
@@ -260,7 +260,7 @@
         
         <div class="d-flex justify-content-between mb-3">
           <span class="text-muted">Subtotal</span>
-          <span class="fw-bold">₹{{ "%.2f"|format(total) }}</span>
+          <span class="fw-bold">${{ "%.2f"|format(total) }}</span>
         </div>
         <div class="d-flex justify-content-between mb-3">
           <span class="text-muted">Delivery Fee</span>
@@ -268,14 +268,14 @@
         </div>
         <div class="d-flex justify-content-between mb-3">
           <span class="text-muted">Taxes & Charges</span>
-          <span class="fw-bold">₹0.00</span>
+          <span class="fw-bold">$0.00</span>
         </div>
         
         <hr class="my-4">
         
         <div class="d-flex justify-content-between mb-4">
           <span class="h5 fw-bold mb-0">Total</span>
-          <span class="h5 fw-bold mb-0 text-primary">₹{{ "%.2f"|format(total) }}</span>
+          <span class="h5 fw-bold mb-0 text-primary">${{ "%.2f"|format(total) }}</span>
         </div>
         
         <form action="{{ url_for('checkout') }}" method="POST" class="w-100 m-0">

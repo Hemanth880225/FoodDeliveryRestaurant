@@ -209,7 +209,7 @@
             </div>
 
             <div class="card-footer">
-                <span class="menu-price">₹{{ item.price }}</span>
+                <span class="menu-price">${{ item.price }}</span>
 
                 {% if current_user.is_authenticated %}
                <form action="{{ url_for('add_to_cart', menu_item_id=item.id) }}" method="POST" class="m-0">

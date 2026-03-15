@@ -23,7 +23,7 @@
               <tr>
                 <td>#{{ order.id }}</td>
                 <td>{{ order.date_ordered.strftime('%b %d, %Y %I:%M %p') }}</td>
-                <td>₹{{ "%.2f"|format(order.total_price) }}</td>
+                <td>${{ "%.2f"|format(order.total_price) }}</td>
                 <td>
                   <span class="badge
                     {% if order.status.lower() == 'delivered' %} badge-success
